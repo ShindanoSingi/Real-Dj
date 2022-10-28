@@ -14,13 +14,13 @@ class UserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
         Token.objects.create(user=user)
-        return user.username
+        return user
 
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ['id', 'item', 'price', 'image', 'countryOfOrigin']
+        fields = ['id', 'item', 'price', 'image', 'Country_Of_Origin']
 
 
 class ExpenseSerializer(serializers.ModelSerializer):
@@ -31,5 +31,5 @@ class ExpenseSerializer(serializers.ModelSerializer):
 
 class RevenueSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Revenue
+        model = Expense
         fields = ['id', 'item', 'price']
