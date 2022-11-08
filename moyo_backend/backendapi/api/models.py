@@ -17,16 +17,23 @@ class Product(models.Model):
     countryOfOrigin = models.CharField(max_length=200, blank=False, null=False)
     date_created = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.item
+
 
 class Expense(models.Model):
     item = models.CharField(max_length=200, blank=False, null=False)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     date_created = models.DateTimeField(auto_now_add=True)
 
-# Declare Revenue
+    def __str__(self):
+        return self.item
 
 
 class Revenue(models.Model):
     item = models.CharField(max_length=200, blank=False, null=False)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     date_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.item
