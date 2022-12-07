@@ -1,0 +1,22 @@
+.container{
+      background-color:rgb(25, 34, 54);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.top-text{
+      text-align: center;
+      font-size: 1em;
+      color: blue;
+}
+.logo{
+      height: 15em;
+      width: 15em;
+  }
+
+.go-button{
+      margin-bottom: 1em;
+}

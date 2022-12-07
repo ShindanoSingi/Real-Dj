@@ -1,0 +1,19 @@
+.container{
+      background-color:rgb(25, 34, 54);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+}
+
+.top-text{
+      align-self: center;
+}
+img.logo{
+      align-items: center;
+      background-size: cover;
+      object-fit: cover;
+  }
+
+.go-button{
+      align-self:end;
+}
