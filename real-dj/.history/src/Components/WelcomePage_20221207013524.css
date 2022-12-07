@@ -77,13 +77,3 @@ a:link{
 
       }
 }
-
-@media (min-width: 1728px) {
-
-
-      .logo{
-            height: 25em;
-            width: 25em;
-        }
-
-}
