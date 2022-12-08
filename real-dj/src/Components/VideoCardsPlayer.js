@@ -40,11 +40,9 @@ const VideoCards = ({ videos, viewsFunc }) => {
                 />
                 <div className="title-and-vud">
                   <p className="video-title">
-                    {video.title.charAt(0).toUpperCase() +
-                      video.title.substring(1, 40).toLowerCase() +
-                      '...'}{' '}
+                    {video.title
+                      }
                   </p>
-
                   <div className="bottom-of-title">
                     <div className="channel">
                       <img
@@ -58,11 +56,10 @@ const VideoCards = ({ videos, viewsFunc }) => {
                         target="_blabk"
                       >
                         <p class="channel-name">
-                          {video.channel.name.substring(0, 10) + '...'}{' '}
+                          {video.channel.name}
                         </p>
                       </a>
                     </div>
-
                     <ul class="views-uploaded-duration">
                       <li class="views">Views: {viewsFunc(video.views)} </li>
                       <li class="uploaded">Posted: {video.uploadedAt} </li>
@@ -75,7 +72,7 @@ const VideoCards = ({ videos, viewsFunc }) => {
               </div>
             </Link>
           ),
-      )}{' '}
+      )}
     </div>
   )
 }

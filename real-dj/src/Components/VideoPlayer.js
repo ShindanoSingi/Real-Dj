@@ -135,7 +135,8 @@ function VideoPlayer({
         userData={userData}
         getUserData={getUserData}
       />
-      <VideoIframe videos={videos} getVideoObject={getVideoObject} />
+      <div className="VideoIframe-cards-container">
+         <VideoIframe videos={videos} getVideoObject={getVideoObject} />
       {/* <NavBarMiddle
         videoObject={videoObject}
         viewsFunc={viewsFunc}
@@ -144,6 +145,8 @@ function VideoPlayer({
         userData={userData}
       /> */}
       <VideoCardsPlayer videos={videos} viewsFunc={viewsFunc} />
+      </div>
+
     </div>
   )
 }

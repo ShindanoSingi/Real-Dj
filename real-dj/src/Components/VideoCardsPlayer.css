@@ -3,13 +3,25 @@ ul li{
 }
 
 .video-thumbnail{
-      width: 8em;;
+      padding: 0 0.5em;
+      height: 10em;
+      border-radius: 5%;
 }
 
 .channel-avatar{
-      width: 2em;
-      height: 2em;
+      width: 3em;
+      height: 3em;
       border-radius: 50%;
+}
+
+.channel-name{
+      width: 150px;
+      position: relative;
+      bottom: 0.8em;
+      overflow: hidden;
+      text-overflow: nowrap;
+      text-overflow: ellipsis;
+      white-space: nowrap;
 }
 
 a{
@@ -17,38 +29,50 @@ a{
 }
 
 .video-title{
-      color: #FFFFFF;
+      display: -webkit-box;
+      color: #BABBBE;
+      max-width: 400px;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      padding: 0 0.5em;
 }
 
 .single-card{
-      width: 100%;
-
-      grid-template-areas: "a b b b"
-                              "a c c c"
-                              "a d d d"
-                              "a e e e"
+      display: flex;
+      flex-direction: column;
+      background-color: #282828;
+      padding: 0.5em 0.1em;;
+      width: 98%;
+      border-radius: 5%;
+      margin: 0 auto;
 }
-
-.video-thumbnail{
-      grid-area: "a";
-}
-
-.video-title{
-      grid-area: "b";
-}
-
-
-
 
 .channel{
-      display: grid;
-      grid-template-rows: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 0em;
+      align-content: center;
+}
+
+.bottom-of-title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0.5em;
+      position: relative;
+      bottom: 0.5em;
 }
 
 
 .cards-container{
-      background-color:#282828;
+      max-height: 25em;
+      overflow-y: auto;
+      margin-top: 0.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      padding-bottom: 1em;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -76,3 +100,124 @@ a{
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
+
+
+    @media (min-width: 768px){
+      .video-thumbnail{
+            padding: 0 0.5em;
+            height: 14em;
+            width: 20em;
+            border-radius: 5%;
+      }
+
+      .single-card{
+            border-radius: 0.5em;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-areas: "a a"
+            "b c"
+      }
+
+      .video-title{
+            grid-area: "a";
+      }
+
+      .video-thumbnail{
+            grid-area: "b";
+      }
+
+    .video-title{
+      font-size: 1.4em;
+      position: relative;
+      bottom: 1em;
+    }
+
+
+    .bottom-of-title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0.5em;
+      position: relative;
+      bottom: 0em;
+      font-size: 1.2em;
+}
+
+.channel-name{
+      position: relative;
+      bottom: 0.5em;
+}
+
+}
+
+@media (min-width: 1024px){
+      .video-thumbnail{
+            padding: 0 0.5em;
+            height: 10em;
+            width: 10em;
+            border-radius: 5%;
+      }
+
+      .single-card{
+            width: 26em;
+            height: 10em;
+            border-radius: 0.5em;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-areas: "a a"
+            "b c"
+      }
+
+      .video-title{
+            grid-area: "a";
+      }
+
+      .video-thumbnail{
+            grid-area: "b";
+      }
+
+    .video-title{
+      font-size: 1.2em;
+      position: relative;
+      bottom: 1em;
+    }
+
+
+    .bottom-of-title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      bottom: 1.5em;
+      font-size: 1em;
+}
+
+      .channel-name{
+            position: relative;
+            bottom: 0.5em;
+            overflow: hidden;
+            text-overflow: nowrap;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 80px;
+      }
+
+      .cards-container{
+            max-height: 40em;
+      }
+
+}
+
+@media (min-width: 1728px){
+      .cards-container{
+            max-height: 58em;
+      }
+
+}
+
+@media (min-width: 2048px){
+      .cards-container{
+            max-height: 60em;
+      }
+
+}
