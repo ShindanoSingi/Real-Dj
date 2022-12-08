@@ -1,0 +1,78 @@
+ul li{
+      list-style-type: none;
+}
+
+.video-thumbnail{
+      width: 8em;;
+}
+
+.channel-avatar{
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+}
+
+a{
+      color:#666669;
+}
+
+.video-title{
+      color: #FFFFFF;
+}
+
+.single-card{
+      width: 100%;
+
+      grid-template-areas: "a b b b"
+                              "a c c c"
+                              "a d d d"
+                              "a e e e"
+}
+
+.video-thumbnail{
+      grid-area: "a";
+}
+
+.video-title{
+      grid-area: "b";
+}
+
+
+
+
+.channel{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 0em;
+}
+
+
+.cards-container{
+      background-color:#282828;
+}
+
+.cards-container::-webkit-scrollbar {
+      width: 0 !important
+    }
+
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    .cards-container::-webkit-scrollbar {
+      width: 0 !important
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }

@@ -136,13 +136,13 @@ function VideoPlayer({
         getUserData={getUserData}
       />
       <VideoIframe videos={videos} getVideoObject={getVideoObject} />
-      <NavBarMiddle
+      {/* <NavBarMiddle
         videoObject={videoObject}
         viewsFunc={viewsFunc}
         getaddToPlaylist={getaddToPlaylist}
         videoId={videoId}
         userData={userData}
-      />
+      /> */}
       <VideoCardsPlayer videos={videos} viewsFunc={viewsFunc} />
     </div>
   )
