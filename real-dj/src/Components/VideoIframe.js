@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import {useParams} from "react-router-dom"
+import './VideoIframe.css'
 // import OnLoadPage from '../Components/OnLoadPage';
 
 function VideoIframe({videos, getPlayedVideoInfo, getVideoObject}) {

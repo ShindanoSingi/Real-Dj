@@ -1,14 +1,10 @@
 import * as React from "react";
-// import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import FolderIcon from "@mui/icons-material/Folder";
-// import RestoreIcon from '@mui/icons-material/Restore';
-// import FavoriteIcon from '@mui/icons-material/Favorite';
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PlayingVideoInfo from "./PlayingVideoInfo";
 import Axios from "axios";
 import { useState } from "react";
 import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
+import './NavBarMiddle.css'
 
 const NavBarMiddle = ({
   videoObject,
@@ -70,7 +66,7 @@ const NavBarMiddle = ({
   };
 
   return (
-    <div className=" bg-[#1E1E1E] flex mx-auto items-center gap-16 middle-nav">
+    <div className="middle-nav">
       <div>
         <PlayingVideoInfo
           videoObject={videoObject}
@@ -79,15 +75,15 @@ const NavBarMiddle = ({
         />
       </div>
 
-      <div className="flex gap-8">
+      <div className="">
         <PlaylistAddIcon
-          className="scale-125 text-stone-400 playlistAddIcon"
+          className="playlistAddIcon"
           onClick={() => {
             addToPlaylist();
             getPlayList();
           }}
         />
-        <FolderIcon className=" playlist text-stone-400" />
+        <FolderIcon className=" playlist" />
       </div>
     </div>
   );

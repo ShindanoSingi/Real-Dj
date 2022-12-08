@@ -1,0 +1,49 @@
+
+.right-nav, .left-nav{
+      display: flex;
+      align-items: center;
+      color: #BBBDC0
+}
+
+.username, .menu-text, .home-text{
+      display: none;
+}
+
+.ri-home-4-line, .ri-menu-fill{
+      font-size:1.5em;
+      color: #BBBDC0;
+}
+
+.navBar{
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      padding: 0.5em;
+      gap: 0.2em;
+}
+
+@media (min-width: 768px) {
+      .username{
+            display: block;
+            margin-right: 1em;;
+      }
+
+      .right-nav, .left-nav{
+            font-size:1.5em;
+      }
+
+}
+
+@media (min-width: 1280px) {
+      .navBar{
+            padding: 0 2em;
+            gap: 0.2em;
+      }
+}
+
+@media (min-width: 2048px) {
+      .right-nav, .left-nav{
+            font-size: 2em;
+      }
+}
