@@ -33,7 +33,7 @@ const Nav = ({
       />
 
       <nav className="right-nav">
-        <p className='username'>Shindano</p>
+        <p className='username'></p>
         <i className="ri-menu-fill"></i>
         <p className='menu-text'>Menu</p>
       </nav>
