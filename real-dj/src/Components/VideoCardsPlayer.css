@@ -98,17 +98,14 @@ a {
   width: 0 !important;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+
 .no-scrollbar {
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 .cards-container::-webkit-scrollbar {
@@ -302,11 +299,5 @@ a {
     max-height: 56em;
   }
 }
-
-/* @media screen and (orientation: landscape){
-  .cards-container{
-        display: none;
-  }
-} */
 
 

@@ -3,7 +3,7 @@ h1{
 }
 
 .busy{
-      position: fixed;
+      position: absolute;
       height: 100vh;
       width: 100vw;
       display: flex;
@@ -11,4 +11,5 @@ h1{
       align-items: center;
       justify-content: center;
       z-index: 100;
+      margin-left: 1em;
 }

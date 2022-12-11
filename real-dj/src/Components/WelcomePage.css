@@ -1,102 +1,98 @@
-.container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.top-text{
-      text-align: center;
-      color: rgb(6, 119, 240);
+.top-text {
+  text-align: center;
+  color: rgb(6, 119, 240);
 }
 
-.text-top{
-      font-size: 1.5em;
+.text-top {
+  font-size: 1.5em;
 }
 
-.text-bottom{
-      font-size: 1em;
+.text-bottom {
+  font-size: 1em;
 }
 
-.logo{
-      height: 15em;
-      width: 15em;
-  }
-
-a:link{
-      text-decoration: none;
+.logo {
+  height: 15em;
+  width: 15em;
 }
 
-.go-button{
+a:link {
+  text-decoration: none;
+}
 
-      font-size: 1.5em;
-      margin-bottom: 1em;
-      text-decoration: none;
-      width: 3em;
-      border-radius: 0.2em;
-
+.go-button {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  width: 3em;
+  border-radius: 0.2em;
 }
 
 @media (min-width: 768px) {
-      .text-top{
-            font-size: 2.5em;
-      }
+  .text-top {
+    font-size: 2.5em;
+  }
 
-      .logo{
-            height: 30em;
-            width: 30em;
-        }
+  .logo {
+    height: 30em;
+    width: 30em;
+  }
 
-      .text-bottom{
-            font-size: 2em;
-      }
+  .text-bottom {
+    font-size: 2em;
+  }
 
-      .go-button{
-            font-size: 2.5em;
-
-      }
+  .go-button {
+    font-size: 2.5em;
+  }
 }
 
 @media (min-width: 1024px) {
-      .text-top{
-            font-size: 2.5em;
-      }
+  .text-top {
+    font-size: 2.5em;
+  }
 
-      .logo{
-            height: 20em;
-            width: 20em;
-        }
+  .logo {
+    height: 20em;
+    width: 20em;
+  }
 
-      .text-bottom{
-            font-size: 2em;
-      }
+  .text-bottom {
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 1728px) {
-
-      .logo{
-            height: 25em;
-            width: 25em;
-        }
+  .logo {
+    height: 25em;
+    width: 25em;
+  }
 }
 
-@media screen and (orientation: landscape){
-      .text-top{
-            font-size: 1.2em;
-      }
+@media screen and (orientation: landscape) {
+  .text-top {
+    font-size: 1.2em;
+  }
 
-      .text-bottom{
-            font-size: 1em;
-      }
+  .text-bottom {
+    font-size: 1em;
+  }
 
-      .go-button{
-            text-align: center;
-            margin-top: 1em;
-            font-size: 1.5em;
-      }
+  .go-button {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
 
-      .logo{
-            height: 15em;
-            width: 15em;
-        }
+  .logo {
+    height: 15em;
+    width: 15em;
+  }
 }
