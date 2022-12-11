@@ -16,8 +16,16 @@ ul li {
   border-radius: 50%;
 }
 
-.channel-name {
+.uploaded{
   width: 100px;
+  overflow: hidden;
+  text-overflow: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.channel-name {
+  width: 80px;
   position: relative;
   bottom: 0.8em;
   overflow: hidden;
@@ -112,107 +120,175 @@ a {
 }
 
 @media (min-width: 768px) {
-  .video-thumbnail {
-    padding: 0 0.5em;
-    height: 14em;
-    width: 20em;
-    border-radius: 5%;
-  }
 
-  .single-card {
-    border-radius: 0.5em;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas:
-      'a a'
-      'b c';
+  .video-thumbnail {
+    height: 12em;
+    width: 15em;
   }
 
   .video-title {
-    grid-area: 'a';
+    font-size: 1.5em;
+    display: -webkit-box;
+    color: #babbbe;
+    max-width: 600px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
   }
 
-  .video-thumbnail {
-    grid-area: 'b';
-  }
-
-  .video-title {
-    font-size: 1.4em;
-    position: relative;
-    bottom: 1em;
-  }
-
-  .bottom-of-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0.5em;
-    position: relative;
-    bottom: 0em;
-    font-size: 1.2em;
+  .uploaded{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .channel-name {
+    width: 200px;
     position: relative;
-    bottom: 0.5em;
+    bottom: 0.8em;
+    overflow: hidden;
+    text-overflow: nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .channel {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+    align-content: center;
+  }
+
+  .thumbnail-channel{
+    display: flex;
+  }
+
+  .bottom-of-title {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .title-and-vud{
+    padding: 0em 0.5em;
+    padding-right: 1em;
+    position: relative;
+    top: -0.2em;
+  }
+
+  .single-card {
+    display: flex;
+    background-color: #282828;
+    height: 12em;
+    width: 98vw;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .cards-container {
+    max-height: 38em;
+    overflow-y: auto;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    padding-bottom: 1em;
   }
 }
 
 @media (min-width: 1024px) {
   .video-thumbnail {
-    padding: 0 0.5em;
-    height: 10em;
+    height: 8em;
     width: 10em;
-    border-radius: 5%;
-  }
-
-  .single-card {
-    width: 26em;
-    height: 10em;
-    border-radius: 0.5em;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas:
-      'a a'
-      'b c';
   }
 
   .video-title {
-    grid-area: 'a';
-  }
-
-  .video-thumbnail {
-    grid-area: 'b';
-  }
-
-  .video-title {
-    font-size: 1.2em;
-    position: relative;
-    bottom: 1em;
-  }
-
-  .bottom-of-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    bottom: 1.5em;
     font-size: 1em;
+    display: -webkit-box;
+    color: #babbbe;
+    max-width: 220px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
   }
 
-  .channel-name {
-    position: relative;
-    bottom: 0.5em;
+  .uploaded{
+    width: 150px;
     overflow: hidden;
     text-overflow: nowrap;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 80px;
+  }
+
+  .channel-name {
+    width: 70px;
+    position: relative;
+    bottom: 0.8em;
+    overflow: hidden;
+    text-overflow: nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .channel {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+    align-content: center;
+  }
+
+  .thumbnail-channel{
+    display: flex;
+  }
+
+  .bottom-of-title {
+    font-size: 01em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title-and-vud{
+    padding: 0em 0.5em;
+    padding-right: 1em;
+    margin-top:1em;
+  }
+
+  .single-card {
+    display: flex;
+    background-color: #282828;
+    height: 8em;
+    width: 25em;
+    border-radius: 0.5em;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0.5em;
   }
 
   .cards-container {
-    max-height: 40em;
+    max-height: 87vh;
+    overflow-y: auto;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    padding-bottom: 1em;
   }
+}
+
+@media (min-width: 1440px) {
+  .uploaded{
+    width: 135px;
+  }
+
 }
 
 @media (min-width: 1728px) {
@@ -221,14 +297,16 @@ a {
   }
 }
 
-@media (min-width: 2048px) {
+@media (min-width: 1920px) {
   .cards-container {
-    max-height: 60em;
+    max-height: 56em;
   }
 }
 
-@media screen and (orientation: landscape){
+/* @media screen and (orientation: landscape){
   .cards-container{
         display: none;
   }
-}
+} */
+
+

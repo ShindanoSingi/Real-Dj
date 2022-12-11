@@ -39,13 +39,17 @@ const VideoCards = ({ videos, viewsFunc }) => {
                     }}
                   />
                   <div className="title-and-vud">
-                    <p className="video-title">{video.title}</p>
+                  {
+                    <p className="video-title">{video.title.split(" ").map(val =>
+                      val.charAt(0).toUpperCase() + val.substring(1).toLowerCase() + " "
+                    ).join('')}</p>
+                  }
                     <div className="bottom-of-title">
                       <div className="channel">
                         <img
                           class="channel-avatar"
                           src={video.channel.icon}
-                          alt=""
+                          alt="avatar"
                         />
                         <a
                           className="channel-avatar"
