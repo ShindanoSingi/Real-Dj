@@ -106,6 +106,7 @@ a {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+
 }
 
 .cards-container::-webkit-scrollbar {
@@ -167,8 +168,8 @@ a {
     font-size: 1.2em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
+    gap: 13em;
+
   }
 
   .title-and-vud{
@@ -187,6 +188,7 @@ a {
     margin: 0 auto;
     align-items: center;
     gap: 0.5em;
+    padding-right:0.5em;
   }
 
   .cards-container {
@@ -250,7 +252,6 @@ a {
     font-size: 01em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   .title-and-vud{
