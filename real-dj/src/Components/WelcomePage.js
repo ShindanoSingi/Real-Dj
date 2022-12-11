@@ -20,9 +20,7 @@ const WelcomePage = () => {
       />
 
 <Link to="/videoPlayer/:id">
-      <input type='submit' value='Go' className="go-button">
-
-      </input></Link>
+      <button className="go-button">Go</button></Link>
     </div>
   )
 }

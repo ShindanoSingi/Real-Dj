@@ -27,12 +27,13 @@ a:link {
   text-decoration: none;
 }
 
-.go-button {
+button {
   font-size: 1.5em;
   margin-bottom: 1em;
   text-decoration: none;
   width: 3em;
   border-radius: 0.2em;
+  background-color: rgb(6, 119, 240);
 }
 
 @media (min-width: 768px) {
@@ -76,7 +77,7 @@ a:link {
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 480px) {
   .text-top {
     font-size: 1.2em;
   }
@@ -85,10 +86,10 @@ a:link {
     font-size: 1em;
   }
 
-  .go-button {
-    text-align: center;
+  button {
     margin-top: 1em;
     font-size: 1.5em;
+    padding: 1em;
   }
 
   .logo {
