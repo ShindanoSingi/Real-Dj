@@ -50,16 +50,3 @@ iframe {
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 768px) {
-  iframe {
-    width: 57vw;
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 883px) and (max-width:884px) {
-  iframe {
-    width: 98vw;
-    margin: 0 0.5em;
-  }
-}
-
