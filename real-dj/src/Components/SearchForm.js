@@ -9,6 +9,7 @@ const SearchForm = ({ searchedString, handleSubmit, handleChange }) => {
     <div className="search-container">
       <form onSubmit={handleSubmit} className="form">
         <input
+        maxLength='32'
           autoFocus
           className="search-input"
           placeholder="Type your search"
