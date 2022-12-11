@@ -64,7 +64,7 @@ a {
   font-size: 0.8em;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 2em;
   position: relative;
   bottom: 0.5em;
 }
@@ -115,6 +115,24 @@ a {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+@media (min-width: 480px) {
+  .bottom-of-title {
+    gap: 18em;
+  }
+
+  .channel-name {
+    width: 150px;
+  }
+
+  .video-title {
+    max-width: 500px;
+  }
+
+  .uploaded{
+    width: 200px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -168,7 +186,7 @@ a {
     font-size: 1.2em;
     display: flex;
     align-items: center;
-    gap: 13em;
+    gap: 10em;
 
   }
 
@@ -249,9 +267,7 @@ a {
   }
 
   .bottom-of-title {
-    font-size: 01em;
-    display: flex;
-    align-items: center;
+    font-size: 1em;
   }
 
   .title-and-vud{
@@ -300,5 +316,51 @@ a {
     max-height: 56em;
   }
 }
+
+@media screen and (orientation: landscape) and (max-width: 480px) {
+  .video-title {
+    font-size: 0.9em;
+    display: -webkit-box;
+    color: #babbbe;
+    max-width: 550px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .uploaded{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .channel-name {
+    width: 150px;
+    position: relative;
+    bottom: 0.8em;
+    overflow: hidden;
+    text-overflow: nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .bottom-of-title {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 25em;
+    position: relative;
+    bottom: 0.5em;
+  }
+
+  .title-and-vud{
+    position: relative;
+    bottom: 0.5em;
+  }
+}
+
+
 
 
