@@ -19,9 +19,10 @@ const WelcomePage = () => {
         alt="Home Page mage"
       />
 
-      <button className="go-button">
-        <Link to="/videoPlayer/:id">Go</Link>
-      </button>
+<Link to="/videoPlayer/:id">
+      <input type='submit' value='Go' className="go-button">
+
+      </input></Link>
     </div>
   )
 }

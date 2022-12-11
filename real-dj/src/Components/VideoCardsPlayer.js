@@ -28,48 +28,43 @@ const VideoCards = ({ videos, viewsFunc }) => {
               to={`/videoPlayer/${video.id}`}
             >
               <div class="single-card" key={index}>
-                <img
-                  className="video-thumbnail "
-                  src={video.thumbnail.url}
-                  alt="thumb-nail"
-                  onClick={() => {
-                    document.getElementsByTagName(
-                      'iframe',
-                    )[0].src = `https://www.youtube.com/watch_popup?v=${video.channel.id}`
-                  }}
-                />
-                <div className="title-and-vud">
-                  <p className="video-title">
-                    {video.title
-                      }
-                  </p>
-                  <div className="bottom-of-title">
-                    <div className="channel">
-                      <img
-                        class="channel-avatar"
-                        src={video.channel.icon}
-                        alt=""
-                      />
-                      <a
-                        className="channel-avatar"
-                        href={`https://www.youtube.com/channel/${video.channel.id}`}
-                        target="_blabk"
-                      >
-                        <p class="channel-name">
-                          {video.channel.name}
-                        </p>
-                      </a>
+                  <img
+                    className="video-thumbnail "
+                    src={video.thumbnail.url}
+                    alt="thumb-nail"
+                    onClick={() => {
+                      document.getElementsByTagName(
+                        'iframe',
+                      )[0].src = `https://www.youtube.com/watch_popup?v=${video.channel.id}`
+                    }}
+                  />
+                  <div className="title-and-vud">
+                    <p className="video-title">{video.title}</p>
+                    <div className="bottom-of-title">
+                      <div className="channel">
+                        <img
+                          class="channel-avatar"
+                          src={video.channel.icon}
+                          alt=""
+                        />
+                        <a
+                          className="channel-avatar"
+                          href={`https://www.youtube.com/channel/${video.channel.id}`}
+                          target="_blabk"
+                        >
+                          <p class="channel-name">{video.channel.name}</p>
+                        </a>
+                      </div>
+                      <ul class="views-uploaded-duration">
+                        <li class="views">Views: {viewsFunc(video.views)} </li>
+                        <li class="uploaded">Posted: {video.uploadedAt} </li>
+                        <li class="duration">
+                          Duration: {video.duration_formatted}{' '}
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="views-uploaded-duration">
-                      <li class="views">Views: {viewsFunc(video.views)} </li>
-                      <li class="uploaded">Posted: {video.uploadedAt} </li>
-                      <li class="duration">
-                        Duration: {video.duration_formatted}{' '}
-                      </li>
-                    </ul>
                   </div>
                 </div>
-              </div>
             </Link>
           ),
       )}

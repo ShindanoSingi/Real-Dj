@@ -7,6 +7,7 @@ import VideoPlayer from "./Components/VideoPlayer"
 import HomePage from "./Components/HomePage"
 import AboutPage from "./Components/AboutPage"
 import axios from 'axios';
+import Wait from './Components/Wait';
 
 
 function App() {

@@ -1,17 +1,14 @@
-.video-player{
-      display: flex;
-      flex-direction: column;
+.video-player {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 1024px){
-      .video-player{
-            display: flex;
-            flex-direction: column;
-      }
-      .VideoIframe-cards-container{
-            display: flex;
-      }
+@media (min-width: 1024px) {
+  .video-player {
+    display: flex;
+    flex-direction: column;
+  }
+  .VideoIframe-cards-container {
+    display: flex;
+  }
 }
-
-
-

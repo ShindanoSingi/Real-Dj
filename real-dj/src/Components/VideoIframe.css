@@ -1,67 +1,61 @@
 iframe {
-      height: 15em;
-      width: 98vw;
-      margin: 0 auto;
+  height: 15em;
+  width: 98vw;
+  margin: 0 auto;
+}
+
+@media (min-width: 360px) {
+  iframe {
+    height: 20em;
+    width: 98vw;
+  }
+}
+
+@media (min-width: 768px) {
+  iframe {
+    height: 30em;
+    width: 98vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  iframe {
+    height: 41em;
+    margin-top: 0.5em;
+    width: 53em;
+  }
+}
+
+@media (min-width: 1440px) {
+  iframe {
+    height: 40em;
+    margin-top: 0.5em;
+    width: 63em;
+  }
+}
+
+@media (min-width: 1728px) {
+  iframe {
+    height: 59em;
+    margin-top: 0.5em;
+    width: 75vw;
+  }
+}
+
+@media (min-width: 2048px) {
+  iframe {
+    height: 61.5em;
+    margin-top: 0.5em;
+    width: 78vw;
+  }
+}
+
+@media screen and (orientation: landscape) {
+    iframe {
+      display: absolute;
+      height: 100vh;
+      width: 100vw;
     }
+}
 
-    @media (min-width: 360px) {
 
-      iframe {
-          height: 20em;
-          width: 98vw;
-
-      }
-    }
-
-    @media (min-width: 768px) {
-
-      iframe {
-          height: 30em;
-          width: 98vw;
-
-      }
-    }
-
-    @media (min-width: 1024px) {
-
-      iframe {
-          height: 41em;
-          margin-top: 0.5em;
-          width: 53em;
-
-      }
-
-    }
-
-    @media (min-width: 1440px) {
-
-      iframe {
-          height: 40em;
-          margin-top: 0.5em;
-          width: 63em;
-
-      }
-
-    }
-
-    @media (min-width: 1728px) {
-
-      iframe {
-          height: 59em;
-          margin-top: 0.5em;
-          width: 75vw;
-
-      }
-
-    }
-
-    @media (min-width: 2048px) {
-
-      iframe {
-          height: 61.5em;
-          margin-top: 0.5em;
-          width: 78vw;
-
-      }
-
-    }

@@ -47,3 +47,10 @@
             font-size: 2em;
       }
 }
+
+@media screen and (orientation: landscape){
+      .navBar{
+            display: none;
+      }
+}
+

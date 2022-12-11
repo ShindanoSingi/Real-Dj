@@ -28,12 +28,13 @@ a:link{
 }
 
 .go-button{
+
       font-size: 1.5em;
       margin-bottom: 1em;
       text-decoration: none;
       width: 3em;
-      border-radius: 0.5em;
-      background:rgb(6, 119, 240);
+      border-radius: 0.2em;
+
 }
 
 @media (min-width: 768px) {
@@ -69,19 +70,33 @@ a:link{
       .text-bottom{
             font-size: 2em;
       }
-
-      .go-button{
-            font-size: 2.5em;
-
-      }
 }
 
 @media (min-width: 1728px) {
-
 
       .logo{
             height: 25em;
             width: 25em;
         }
+}
 
+@media screen and (orientation: landscape){
+      .text-top{
+            font-size: 1.2em;
+      }
+
+      .text-bottom{
+            font-size: 1em;
+      }
+
+      .go-button{
+            text-align: center;
+            margin-top: 1em;
+            font-size: 1.5em;
+      }
+
+      .logo{
+            height: 15em;
+            width: 15em;
+        }
 }
