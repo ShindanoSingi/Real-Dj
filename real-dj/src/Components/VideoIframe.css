@@ -21,7 +21,7 @@ iframe {
 @media (min-width: 1024px) {
   iframe {
     height: 90vh;
-    width: 70vw;
+    width: 68vw;
     margin-top: 0.5em;
     width: 53em;
   }
@@ -30,7 +30,7 @@ iframe {
 @media (min-width: 1440px) {
   iframe {
     height: 40em;
-    width: 63em;
+    width: 62em;
   }
 }
 
@@ -38,7 +38,7 @@ iframe {
   iframe {
     height: 59em;
     margin-top: 0.5em;
-    width: 75vw;
+    width: 74vw;
   }
 }
 
@@ -46,7 +46,7 @@ iframe {
   iframe {
     height: 57em;
     margin-top: 0.5em;
-    width: 78vw;
+    width: 77vw;
   }
 }
 
