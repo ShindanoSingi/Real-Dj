@@ -3,13 +3,16 @@ h1{
 }
 
 .busy{
-      position: fixed;
-      height: 100vh;
-      width: 100vw;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      z-index: 1000;
+}
 
+.busy-container{
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      place-content: center;
+      position: absolute;
 }
