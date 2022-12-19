@@ -5,6 +5,7 @@ import VideoCardsPlayer from '../Components/VideoCardsPlayer'
 import Nav from './Nav'
 import NavBarMiddle from '../Components/NavBarMiddle'
 import './VideoPlayer.css'
+import Wait from './Wait'
 
 function VideoPlayer({
   videos,
@@ -135,7 +136,8 @@ function VideoPlayer({
         userData={userData}
         getUserData={getUserData}
       />
-      <div className="VideoIframe-cards-container">
+      {
+        videos.length > 0 ?  <div className="VideoIframe-cards-container">
          <VideoIframe videos={videos} getVideoObject={getVideoObject} />
       {/* <NavBarMiddle
         videoObject={videoObject}
@@ -145,7 +147,9 @@ function VideoPlayer({
         userData={userData}
       /> */}
       <VideoCardsPlayer videos={videos} viewsFunc={viewsFunc} />
-      </div>
+      </div> : <Wait />
+      }
+
 
     </div>
   )

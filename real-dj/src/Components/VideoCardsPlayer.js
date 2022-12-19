@@ -15,9 +15,7 @@ const VideoCards = ({ videos, viewsFunc }) => {
   // console.log('No videos');
   // }
 
-  return videos.length < 1 ?
-    <Wait />
-   : (
+  return  (
     <div className="cards-container ">
       {videos.map(
         (video, index) =>
