@@ -5,13 +5,21 @@
       color: #BBBDC0
 }
 
-.username, .menu-text, .home-text{
+.username {
+      display: none;
+}
+
+.register {
       display: none;
 }
 
 .ri-home-4-line, .ri-menu-fill{
       font-size:1.5em;
       color: #BBBDC0;
+}
+
+.login-active{
+      border-bottom: 2px solid #BBBDC0;
 }
 
 .navBar{
@@ -26,13 +34,19 @@
 @media (min-width: 768px) {
       .username{
             display: block;
-            margin-right: 1em;;
+      }
+
+      .register {
+            display: block;
       }
 
       .right-nav, .left-nav{
             font-size:1.5em;
       }
 
+      .right-nav{
+            gap: 1em;
+      }
 }
 
 @media (min-width: 1280px) {

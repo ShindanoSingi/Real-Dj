@@ -1,10 +1,11 @@
 import React from 'react'
-import HomeHistoryPlaylistIcons from './HomeHistoryPlaylistIcons'
+// import HomeHistoryPlaylistIcons from './HomeHistoryPlaylistIcons'
 import SearchForm from './SearchForm'
-import UserLoginIcon from './UserLoginIcon'
-import { GoThreeBars } from 'react-icons/go'
+// import UserLoginIcon from './UserLoginIcon'
+// import { GoThreeBars } from 'react-icons/go'
 import { Link } from 'react-router-dom'
 import './Nav.css'
+
 
 // This is the search form. It conatins both the input box and the search icon
 const Nav = ({
@@ -16,14 +17,14 @@ const Nav = ({
   getUserData,
 }) => {
   // console.log(forwardedRef)
+  const user = userData.user;
+
 
   return (
     <nav className="navBar">
-     <nav className="left-nav"> <Link to="/">
-
+     <nav className="left-nav">
+     <Link to="/">
           <i className="ri-home-4-line"></i>
-          <p className='home-text'>Home</p>
-
       </Link></nav>
 
       <SearchForm
@@ -33,9 +34,11 @@ const Nav = ({
       />
 
       <nav className="right-nav">
-        <p className='username'></p>
+      <Link to='/login'>
+        <p className='register'>Login</p>
+      </Link>
+
         <i className="ri-menu-fill"></i>
-        <p className='menu-text'>Menu</p>
       </nav>
     </nav>
 
